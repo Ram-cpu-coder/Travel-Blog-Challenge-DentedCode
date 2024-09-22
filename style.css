@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(56, 186, 222);
+}
+
+/* ------------------------------top-bar----------------------------- */
+.top-bar {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.right-header h3 {
+    text-decoration: none;
+    align-self: center;
+}
+
+/* -----------------------------top-bar END ------------------------------ */
+
+/* ------------------------------------nav-bar-------------------------------------------- */
+
+.whole-nav {
+    background: rgb(37, 37, 231);
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin: auto;
+}
+
+/* -------------media-query-------- */
+@media screen and (max-width: 600px) {
+    .whole-nav {
+        height: auto;
+        background: rgb(37, 37, 231);
+    }
+
+    .nav-bar {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .right-nav nav ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+}
+
+/* ---------------------------------------------nav-bar END------------------------------------------ */
+/* ----------------------------------------logo-nav----------------------------------- */
+
+.logo-nav img {
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.right-nav nav ul {
+    display: flex;
+    /* border: 2px solid red; */
+    /* width: 90%; */
+}
+
+.right-nav nav ul li {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 23px;
+}
+
+.right-nav nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* --------------------------------------------logo-nav END--------------------------- */
+
+/* ------------------------------------------main-page------------------------------- */
+.main-page {
+    background-image: url(Images/bg-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-message {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 35%;
+    height: 35%;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    padding: 0 6px;
+}
+
+.welcome-message hr,
+h1,
+p {
+    margin-top: 20px;
+}
+
+.welcome-message hr {
+    width: 80%;
+    align-self: center;
+}
+
+
+@media screen and (max-width: 1020px) {
+    .welcome-message {
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .welcome-message {
+        font-size: 12px;
+        height: 40%;
+        padding: 0 6px;
+    }
+}
+
+/* ----------------------------------------------main-page END---------------------------------------- */
+
+/* -------------------------------------------------latest-posts------------------------------------------- */
+
+/* --------------------------------posts--------------------------- */
+#latest-posts{
+    margin-top: 20px;
+}
+.main-latestposts-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+.main-latestposts-div h1, hr{
+    margin-bottom: 10px;
+}
+.img-posts img{
+    height: 200px;
+    width: 300px;
+}
+.posts{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: rgba(253, 254, 255, 0.6);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.6);
+}
+.para-posts{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    gap: 20px;
+}
+.button-posts{
+    display: flex;
+    justify-content: flex-end;
+
+    button{
+        background: rgb(124, 212, 236);
+        border: none;
+        border-radius: 8px;
+        padding: 5px;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+    }
+}
+.para{
+    padding: -10px;
+}
