@@ -164,7 +164,7 @@ p {
 #latest-posts{
     display: flex;
     margin-top: 20px;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     margin: auto;
     gap: 10px;
@@ -173,18 +173,29 @@ p {
 .main-latestposts-div{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     /* border: 2px solid red; */
     margin: auto;
+    
 }
 .main-latestposts-div h1, hr{
     margin-bottom: 10px;
+}
+.container-latestposts{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: auto;
+    width: auto;
+    justify-content: space-between;
 }
 .img-posts img{
     height: 200px;
     width: 300px;
 }
 .posts{
+    width: 70%;
+    height: auto;
     padding: 15px;
     display: flex;
     flex-direction: row;
@@ -214,7 +225,7 @@ p {
     }
 }
 .para{
-    padding: -10px;
+    /* padding: -10px; */
 }
 
 /* ---------------------------------side-latestposts-div------------------0000 */
@@ -223,8 +234,9 @@ p {
     display: flex;
     flex-direction: column;
     background: lightgreen;
-    height: auto;
-    width: auto;
-    border: 2px solid black;
-    padding: 20px;
+    height: 35%;
+    width: 35%;
+    /* border: 2px solid black; */
+    padding: 6px 30px;
+    border-radius: 10px;
 }
