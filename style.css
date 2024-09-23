@@ -36,12 +36,13 @@ body {
 .whole-nav {
     background: rgb(37, 37, 231);
     height: auto;
+    width: 100%;
 }
 
 .nav-bar {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 82%;
     justify-content: space-between;
     align-items: center;
     height: auto;
@@ -53,6 +54,8 @@ body {
     .whole-nav {
         height: auto;
         background: rgb(37, 37, 231);
+        /* position: sticky;
+        top: 20px; */
     }
 
     .nav-bar {
@@ -62,6 +65,8 @@ body {
         justify-content: center;
         align-items: center;
         gap: 10px;
+        position: sticky;
+        top: 5px;
     }
 
     .right-nav nav ul {
@@ -163,38 +168,48 @@ p {
 /* --------------------------------posts--------------------------- */
 #latest-posts{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
     width: 90%;
-    justify-content: space-between;
     margin: auto;
-    gap: 10px;
-    border: 2px solid red;
+    /* gap: 10px; */
+    /* border: 2px solid red; */
 }
 .main-latestposts-div{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 90%;
     /* border: 2px solid red; */
     margin: auto;
     
 }
-.main-latestposts-div h1, hr{
+.main-latestposts-div hr{
     margin-bottom: 10px;
+    width: 90%;
+}
+#latest-posts h1{
+    display: flex;
+    /* justify-content: flex-start; */
+    width: 80%;
+    /* border: 2px solid red; */
 }
 .container-latestposts{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
     height: auto;
-    width: auto;
+    width: 90%;
     justify-content: space-between;
+    border: 2px solid red;
 }
 .img-posts img{
     height: 200px;
     width: 300px;
 }
 .posts{
-    width: 70%;
+    /* width: 100%; */
     height: auto;
     padding: 15px;
     display: flex;
@@ -204,6 +219,7 @@ p {
     border: none;
     border-radius: 8px;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.6);
+    border: 2px solid red;
 }
 .para-posts{
     display: flex;
@@ -235,8 +251,17 @@ p {
     flex-direction: column;
     background: lightgreen;
     height: 35%;
-    width: 35%;
-    /* border: 2px solid black; */
+    width: 20%;
+    border: 2px solid black;
     padding: 6px 30px;
     border-radius: 10px;
+}
+
+
+
+.left-latest-posts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 75%;
 }
