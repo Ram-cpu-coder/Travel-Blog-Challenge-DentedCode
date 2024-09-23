@@ -25,7 +25,7 @@ body {
     align-self: center;
 }
 
-.right-header > a {
+.right-header>a {
     color: black;
 }
 
@@ -75,6 +75,11 @@ body {
         height: auto;
         gap: 10px;
     }
+
+    .main-page {
+        background-position-y: 10%;
+
+    }
 }
 
 /* ---------------------------------------------nav-bar END------------------------------------------ */
@@ -121,8 +126,8 @@ body {
 }
 
 .welcome-message {
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    background: rgba(227, 226, 226, 0.6);
+    color: black;
     width: 35%;
     height: 35%;
     /* border: 2px solid red; */
@@ -153,6 +158,21 @@ p {
     }
 }
 
+@media screen and (max-width:390px) {
+    .main-page {
+        width: 390px;
+    }
+
+    .whole-nav {
+        width: 390px;
+
+    }
+
+    .top-bar {
+        width: 390px;
+    }
+}
+
 @media screen and (max-width: 535px) {
     .welcome-message {
         font-size: 12px;
@@ -161,14 +181,16 @@ p {
     }
 }
 
+
 /* ----------------------------------------------main-page END---------------------------------------- */
 
 /* -------------------------------------------------latest-posts------------------------------------------- */
 
 /* --------------------------------posts--------------------------- */
-#latest-posts{
+#latest-posts {
     display: flex;
     flex-direction: column;
+
     align-items: center;
     margin-top: 20px;
     width: 90%;
@@ -176,92 +198,176 @@ p {
     /* gap: 10px; */
     /* border: 2px solid red; */
 }
-.main-latestposts-div{
+
+.main-latestposts-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    min-width: 90%;
+    align-items: space-around;
     /* border: 2px solid red; */
     margin: auto;
-    
+
 }
-.main-latestposts-div hr{
+
+.main-latestposts-div hr {
     margin-bottom: 10px;
     width: 90%;
 }
-#latest-posts h1{
+
+#latest-posts h1 {
     display: flex;
     /* justify-content: flex-start; */
     width: 80%;
     /* border: 2px solid red; */
 }
-.container-latestposts{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    height: auto;
-    width: 90%;
-    justify-content: space-between;
-    border: 2px solid red;
-}
-.img-posts img{
-    height: 200px;
-    width: 300px;
-}
-.posts{
-    /* width: 100%; */
-    height: auto;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    background: rgba(253, 254, 255, 0.6);
-    border: none;
-    border-radius: 8px;
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.6);
-    border: 2px solid red;
-}
-.para-posts{
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid red; */
-    gap: 20px;
-}
-.button-posts{
-    display: flex;
-    justify-content: flex-end;
 
-    button{
-        background: rgb(124, 212, 236);
-        border: none;
-        border-radius: 8px;
-        padding: 5px;
-        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
-        cursor: pointer;
+.container-latestposts {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    /* border: 2px solid red; */
+}
+
+@media screen and (max-width: 825px) {
+
+    .container-latestposts {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        /* border: 2px solid black; */
+    }
+
+    .left-latest-posts {
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .posts {
+        border: 2px solid blue;
+        width: 147%;
+    }
+
+    .side-latestposts-div {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid green; */
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .side-by-country,
+    .side-by-date {
+        /* border: 2px solid red; */
+        width: auto;
     }
 }
-.para{
-    /* padding: -10px; */
-}
 
-/* ---------------------------------side-latestposts-div------------------0000 */
+    @media screen and (max-width:520px) {
+        .posts {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            width: auto;
+        }
 
-.side-latestposts-div{
-    display: flex;
-    flex-direction: column;
-    background: lightgreen;
-    height: 35%;
-    width: 20%;
-    border: 2px solid black;
-    padding: 6px 30px;
-    border-radius: 10px;
-}
+        /* .img-posts img {
+            height: auto;
+            width: 400px;
+        } */
+    }
+
+    .img-posts img{
+        width: 200px;
+        height: 150px;
+    }
 
 
+    .posts {
+        /* width: 100%; */
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background: rgba(253, 254, 255, 0.6);
+        border: none;
+        border-radius: 8px;
+        box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.6);
+        /* border: 2px solid red; */
+    }
 
-.left-latest-posts{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 75%;
-}
+    .para-posts {
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        gap: 20px;
+    }
+
+    .button-posts {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            background: rgb(124, 212, 236);
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 5px;
+            box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+        }
+    }
+
+   
+
+    /* ---------------------------------side-latestposts-div------------------0000 */
+
+    .side-latestposts-div {
+        display: flex;
+        flex-direction: column;
+        min-width: 25%;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .side-by-country,
+    .side-by-date {
+        display: flex;
+        flex-direction: column;
+        background: rgba(139, 240, 139, 0.4);
+        /* height: 25%; */
+        min-width: 25%;
+        /* border: 2px solid black; */
+        padding: 6px 30px;
+        border-radius: 10px;
+        margin-top: 6px;
+    }
+
+    .side-by-country>ul {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+    .side-by-date>ul {
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+
+    .left-latest-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 65%;
+    }
