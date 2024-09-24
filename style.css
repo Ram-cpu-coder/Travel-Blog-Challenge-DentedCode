@@ -470,7 +470,7 @@ p {
     }
 
     .posts {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         width: 147%;
     }
 
