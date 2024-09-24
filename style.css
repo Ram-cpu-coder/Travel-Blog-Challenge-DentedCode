@@ -4,8 +4,9 @@
 }
 
 body {
-    background: rgb(56, 186, 222);
+    background: white;
 }
+
 
 /* ------------------------------top-bar----------------------------- */
 .top-bar {
@@ -129,13 +130,19 @@ p {
 
 /* --------------------------------posts--------------------------- */
 #latest-posts {
+    background: url('./Images/latest-posts.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
 
     align-items: center;
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    padding-bottom: 10px;
     /* gap: 10px; */
     /* border: 2px solid red; */
 }
@@ -158,8 +165,9 @@ p {
 
 #latest-posts h1 {
     display: flex;
+    color: white;
     /* justify-content: flex-start; */
-    width: 80%;
+    width: 90%;
     /* border: 2px solid red; */
 }
 
@@ -189,7 +197,7 @@ p {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        background: rgba(253, 254, 255, 0.6);
+        background: rgba(253, 254, 255, 0.8);
         border: none;
         border-radius: 8px;
         box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.6);
@@ -207,14 +215,21 @@ p {
         display: flex;
         justify-content: flex-end;
 
-        button {
-            background: rgb(124, 212, 236);
-            border: 1px solid black;
-            border-radius: 8px;
-            padding: 5px;
-            box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
-            cursor: pointer;
-        }
+    }
+    .button-posts button {
+        background: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 5px;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+        font-size: 15px;
+    }
+    .button-posts button:hover{
+       
+            background:rgb(124, 212, 236);
+            color: black;
     }
 
    
@@ -233,7 +248,7 @@ p {
     .side-by-date {
         display: flex;
         flex-direction: column;
-        background: rgba(139, 240, 139, 0.4);
+        background: rgba(139, 240, 139, 0.6);
         /* height: 25%; */
         min-width: 25%;
         /* border: 2px solid black; */
@@ -266,11 +281,13 @@ p {
 
 
     #recommendation-destination{
-        background: white;
+        /* background: white; */
+        margin-top: 20px;
+        height: auto;
     }
     .container-recommendation{
         margin-top: 20px;
-        border: 2px solid black;
+        /* border: 2px solid black; */
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -290,7 +307,8 @@ p {
         flex-direction: row;
         justify-content: space-around;
         width: auto;
-        border: 2px solid yellow;
+        height: auto;
+        /* border: 2px solid yellow; */
         padding: 0 20px;
     }
 
@@ -300,19 +318,18 @@ p {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        /* grid-template-columns: repeat(4, 300px);
-        grid-template-rows: 400px;
-        column-gap: 10px; */
+        gap: 5%;
         width: auto;
-        height: auto;
+        height: 100%;
     }
     .item-flex-recommendation{
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         background: white;
         border-radius: 15px;
-        box-shadow: 1px 1px 14px 7px rgba(0, 0, 0, 0.6);
+        box-shadow: 1px 1px 14px 7px rgba(0, 0, 0, 0.4);
         min-width: 300px;
         width: 22%;
+        height: auto;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -334,17 +351,91 @@ p {
         height: auto;
     }
     .img-recommendation img{
-        border-radius: 15px; 
+        border-radius: 15px 15px 0 0; 
         height: 100%;
         width: 100%;
     }
-    /* .explore-button */
+
+
+    /* --------------------------------------buttons---------------------------------- */
+    .explore-button{
+        margin-top: 10px;
+        background: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+    }
+    .explore-button:hover{
+        background:rgb(124, 212, 236);
+        color: black;
+    }
+
+    .explore-button i{
+        font-size: 18px;
+    }
+
+
+/* -----------------------------------------------footer------------------------------------------------ */
+
+.footer-div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background: black;
+    color: white;
+    padding-bottom: 10px;
+}
+.input-data{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  
+}
+.input-data input{
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
+.row-div-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.submit-button button{
+    border-radius: 9px;
+    width: 90px;
+    height: 30px; 
+    box-shadow:1px 0px 0px 0px rgb(221 214 214 / 60%);
+    /* box-shadow:1px 0px 0px 0px rgb(221 214 214 / 60%); */
+    background: black;
+    color: white;
+}
+.submit-button button:hover{
+    box-shadow:  0px 0px 14px 0px rgb(253 253 253 / 60%);
+    background: grey;
+    color: white;
+    cursor: pointer;
+    
+}
 
 
 
-
-
-
+/* ------------------------------------------------media-query-------------------------------- */
 @media screen and (max-width: 1320px) {
         .item-flex-recommendation{
             gap: 30px;
